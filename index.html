@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <div id="app">
+    <table class="budget-calculator">
+      <thead>
+        <tr>
+          <th>Income</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Marital Status</th>
+          <th>No of Dependents</th>
+        </tr>
+      </thead>
+      <tbody class="entries">
+        <tr>
+          <td>
+            <input class="input inpute-date" type="date">
+          </td>
+          <td>
+            <input class="input input-Income" type="text" placeholder="()">
+          </td>
+          <td>
+            <select class="input input-type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+          </td>
+          <td>
+            <input type="number" class="input input-amount">
+          </td>
+          <button type="button" class="delete-entry">&#10005;</button>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

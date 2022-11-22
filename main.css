@@ -1,0 +1,51 @@
+.budget-tracker{
+    border-collapse:collapse;
+    font-family: sans serif;
+    min-width: 750px;
+}
+.budget-calculator *{
+    font-family: san serif;
+}
+.budget-calculator th{
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid #008765;
+}
+.budget-calculator td{
+    padding: 5px;
+}
+.input,
+.delete-entry{
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.input{
+    border: 1px solid #ffe;
+    border-radius: 5px; 
+    outline: none;
+}
+.input.focus{
+    border-color:black;
+}
+.delete-entry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background: none;
+    color: blue;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.delete-entry:hover{
+    background: rgb(red, green, blue);
+}
+.controls,
+.summary{
+    text-align: right;
+}
