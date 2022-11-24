@@ -13,27 +13,39 @@
     <table class="budget-calculator">
       <thead>
         <tr>
-          <th>Income</th>
-          <th>Age</th>
-          <th>Gender</th>
-          <th>Marital Status</th>
           <th>No of Dependents</th>
+          <th>Description</th>
+          <th>Marital Status</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Income</th>
+          <th>Amount</th>
+          
         </tr>
       </thead>
       <tbody class="entries">
         <tr>
           <td>
-            <input class="input inpute-date" type="date">
+            <input class="input input-description" type="text">
           </td>
           <td>
-            <input class="input input-Income" type="text" placeholder="()">
+            <input class="input input-Description" type="text" placeholder="(wages,bills,water.food)">
           </td>
           <td>
             <select class="input input-type">
-              <option value="income">Income</option>
-              <option value="expense">Expense</option>
+              <option value="marital status"></option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
             </select>
           </td>
+          <td>
+            <select class="input input-type">
+              <option value="Gender"></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </td>
+
           <td>
             <input type="number" class="input input-amount">
           </td>
@@ -41,6 +53,21 @@
         </td>
         </tr>
       </tbody>
+      <tbody>
+        <tr>
+          <td colspan="5" class="controls">
+            <button type="button" class="New-entry">New Entry</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="summary">
+            <strong>Total:</strong>
+            <span class="total">N 0.00</span>
+          </td>
+        </tr>
+      </tfoot>
     </table>
   </div>
 </body>
